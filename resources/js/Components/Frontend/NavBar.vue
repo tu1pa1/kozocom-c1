@@ -133,7 +133,11 @@
                                         <path d="M7 6a7.75 7.75 0 1 0 10 0"></path>
                                         <line x1="12" y1="4" x2="12" y2="12"></line>
                                     </svg>
-                                    <span class="ml-2"> Log Out </span>
+                                    <form @submit.prevent="logOut">
+                                        <span class="ml-2"> 
+                                            <button>Log out</button>
+                                        </span>
+                                    </form>    
                                 </li>
                             </ul>
                             
@@ -276,14 +280,18 @@
     </div>
     <!-- Page title ends -->
 </template>
-
 <script>
+import { Link, useForm } from '@inertiajs/inertia-vue3'
+
 export default {
     name: "LightWithTabs",
     data() {
         return {
             profilePhoto: "https://images.pexels.com/photos/2955305/pexels-photo-2955305.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         };
+    },
+    components: {
+        Link
     },
     methods: {
         dropdownHandler(event) {
@@ -304,6 +312,9 @@ export default {
                 el.currentTarget.classList.add("hidden");
             }
         },
+        logOut() {
+            useForm().post(route('logout')); 
+        }
     },
 };
 </script>
