@@ -1,12 +1,7 @@
-<script setup>
-import { ref } from 'vue';
-import NavBar from '@/Components/Frontend/NavBar.vue';
-</script>
-
 <template>
     <div>
         <div class="min-h-screen bg-gray-100">
-            <NavBar />
+            <NavBar :auth="auth"/>
             <!-- Page Content -->
             <main>
                 <slot />
@@ -14,3 +9,19 @@ import NavBar from '@/Components/Frontend/NavBar.vue';
         </div>
     </div>
 </template>
+
+<script>
+import NavBar from '@/Components/Frontend/NavBar.vue';
+import { usePage } from "@inertiajs/inertia-vue3"
+
+export default {
+    components: {
+        NavBar
+    },
+    computed: {
+        auth() {
+            return usePage().props.value.auth.user;
+        }
+    }
+}
+</script>
