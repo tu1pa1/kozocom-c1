@@ -15,11 +15,19 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/', function () {
+    return Inertia::render('Auth/Login', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register')
+    ]);
+});
+
 Route::group([
     'namespace' => 'Frontend', 
-    'as' => 'frontend'
+    'as' => 'frontend',
 ], function () {
     include_route_files(__DIR__ . '/frontend/');
 });
+
 
 require __DIR__.'/auth.php';
