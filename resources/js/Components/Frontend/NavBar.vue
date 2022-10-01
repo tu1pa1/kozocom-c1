@@ -145,7 +145,7 @@
                             <img class="rounded-full h-10 w-10 object-cover" :src="profilePhoto" alt="avatar" />
                             <span class="bottom-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
                             </div>
-                            <p class="text-gray-800 text-sm ml-2">{{ $page.props.auth.name }}</p>
+                            <p class="text-gray-800 text-sm ml-2">{{ auth.name }}</p>
                         </div>
                     </div>
                 </div>
@@ -292,6 +292,9 @@ export default {
     },
     components: {
         Link
+    },
+    props: {
+        auth: Object
     },
     methods: {
         dropdownHandler(event) {
