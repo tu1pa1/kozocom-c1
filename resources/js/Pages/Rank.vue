@@ -1,8 +1,10 @@
 <template>
+    <Head title="Rank" />
     <div class="mt-4 h-full border rounded-t-lg">
         <div class="flex gap-2 py-3 px-6 bg-blue-dark">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-arrows-vertical text-green-600" width="20"
-                height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-chart-arrows-vertical text-green-600" width="20" height="20"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M18 21v-14"></path>
@@ -61,7 +63,8 @@
                             1
                         </th>
                         <td class="py-4 px-6 flex items-center text-base">
-                            <img src="https://resources.premierleague.com/premierleague/badges/25/t1.png" alt="Manchester United Logo">
+                            <img src="https://resources.premierleague.com/premierleague/badges/25/t1.png"
+                                alt="Manchester United Logo">
                             <span class="px-4">Manchester United</span>
                         </td>
                         <td class="py-4 px-6 w-0">
@@ -89,35 +92,25 @@
                             3
                         </td>
                         <td class="py-4 px-3 inline-flex items-center">
-                            <button
-                                type="button"
-                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">D</p>
                             </button>
-                       
-                            <button
-                                type="button"
-                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+
+                            <button type="button"
+                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">W</p>
                             </button>
-                            <button
-                                type="button"
-                                class="text-white bg-red-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-red-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">L</p>
                             </button>
-                            <button
-                                type="button"
-                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">D</p>
                             </button>
-                            <button
-                                type="button"
-                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">W</p>
                             </button>
                         </td>
@@ -128,7 +121,8 @@
                             1
                         </th>
                         <td class="py-4 px-6 flex items-center text-base">
-                            <img src="https://resources.premierleague.com/premierleague/badges/25/t1.png" alt="Manchester United Logo">
+                            <img src="https://resources.premierleague.com/premierleague/badges/25/t1.png"
+                                alt="Manchester United Logo">
                             <span class="px-4">Manchester United</span>
                         </td>
                         <td class="py-4 px-6 w-0">
@@ -156,35 +150,25 @@
                             3
                         </td>
                         <td class="py-4 px-3 inline-flex items-center">
-                            <button
-                                type="button"
-                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">D</p>
                             </button>
-                       
-                            <button
-                                type="button"
-                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+
+                            <button type="button"
+                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">W</p>
                             </button>
-                            <button
-                                type="button"
-                                class="text-white bg-red-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-red-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">L</p>
                             </button>
-                            <button
-                                type="button"
-                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-gray-500 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">D</p>
                             </button>
-                            <button
-                                type="button"
-                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1"
-                            >
+                            <button type="button"
+                                class="text-white bg-green-700 font-medium rounded-full w-8 h-8 flex justify-center items-center mr-1">
                                 <p class="font-bold">W</p>
                             </button>
                         </td>
@@ -196,7 +180,11 @@
 </template>
 
 <script>
+import { Head } from "@inertiajs/inertia-vue3";
+
 export default {
-    
+    components: {
+        Head
+    }
 }
 </script>
